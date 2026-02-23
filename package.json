@@ -1,0 +1,23 @@
+{
+  "name": "testmu-sdet-ai-hackathon",
+  "version": "1.0.0",
+  "description": "Playwright test suite for SauceDemo",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:list": "playwright test --list",
+    "test:headed": "playwright test --headed",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.3.0",
+    "dotenv": "^17.3.1",
+    "groq-sdk": "^0.37.0",
+    "typescript": "^5.9.3"
+  }
+}
