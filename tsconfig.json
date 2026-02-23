@@ -4,13 +4,15 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "types": ["node", "@playwright/test"],
+    "lib": ["ES2022", "DOM"],
     "strict": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
-    "noEmit": true
+    "noEmit": true,
+    "noUncheckedIndexedAccess": true
   },
   "include": ["playwright.config.ts", "tests/**/*.ts", "utils/**/*.ts"]
 }

@@ -1,19 +1,30 @@
 {
   "name": "testmu-sdet-ai-hackathon",
   "version": "1.0.0",
-  "description": "Playwright test suite for SauceDemo",
-  "main": "index.js",
+  "description": "Production-style Playwright + TypeScript automation framework for SauceDemo with failure diagnostics.",
+  "author": "Tanishq",
+  "license": "MIT",
+  "private": true,
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "test": "playwright test",
     "test:list": "playwright test --list",
     "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:report": "playwright show-report",
     "typecheck": "tsc --noEmit"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "dependencies": {
+  "keywords": [
+    "playwright",
+    "typescript",
+    "sdet",
+    "automation-testing"
+  ],
+  "devDependencies": {
     "@playwright/test": "^1.58.2",
     "@types/node": "^25.3.0",
     "dotenv": "^17.3.1",
